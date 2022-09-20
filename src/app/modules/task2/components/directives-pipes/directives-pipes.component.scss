@@ -1,0 +1,23 @@
+label {
+  font-size: large;
+
+  input {
+    color: darkviolet;
+    width: 90%;
+    font-size: 1rem;
+    background-color: lightcyan;
+    border-radius: 6px;
+    text-overflow: ellipsis;
+  }
+}
+
+mark {
+  font-family: Calibri, sans-serif;
+  font-size: large;
+  color: darkviolet;
+  text-shadow: 0 0 1px;
+}
+
+mark, input {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

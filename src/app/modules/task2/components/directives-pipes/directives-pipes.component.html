@@ -1,0 +1,9 @@
+<label>Text: <input type="text" [(ngModel)]="text"></label>
+<ul>
+  <li *ngFor="let i of titles">
+    <mark>{{i}}</mark>
+    <p appHighlighter *ngIf="i === titles[0]">{{ text }}</p>
+    <p appHighlighter *ngIf="i === titles[1]">{{ text | reverseWords }}</p>
+    <p appHighlighter *ngIf="i === titles[2]">{{ text | reverseWords : true }}</p>
+  </li>
+</ul>

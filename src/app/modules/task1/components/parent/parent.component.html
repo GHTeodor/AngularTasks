@@ -30,7 +30,7 @@
       [buttonText] = "'Font'"
       (changeParent)="setRandomFontForParentTitle()"
     >
-      <span style="display: flex">
+      <span [ngStyle]="{'display': 'flex'}">
         <p #addAdditionalContent></p>
         <app-form (additionalContent)="setAdditionalContent($event)"></app-form>
       </span>
