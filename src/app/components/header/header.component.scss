@@ -2,9 +2,12 @@ div {
   > a {
     font-size: x-large;
     font-weight: bold;
+    text-decoration-line: underline;
   }
 
   > a.active {
+    text-shadow: violet 1px 0 2px;
     color: orangered;
+    text-decoration-line: underline overline ;
   }
 }

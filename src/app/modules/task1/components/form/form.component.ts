@@ -24,6 +24,7 @@ export class FormComponent implements OnInit {
   addContent(): void {
     if (!this.form.get("title")?.errors) {
       this.additionalContent.emit(this.form.get("title")?.value);
+      this.form.reset();
     }
   }
 }
