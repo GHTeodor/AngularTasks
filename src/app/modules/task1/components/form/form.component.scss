@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  align-items: stretch;
+
+  input, button {
+    opacity: .8;
+    color: orangered;
+  }
+
+  button {
+    height: 40px;
+  }
+}

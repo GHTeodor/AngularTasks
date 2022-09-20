@@ -1,0 +1,40 @@
+<div class="wrapper" #parentComponent>
+
+  <h1 #parentTitle>Parent title</h1>
+
+  <div class="children-wrap">
+    <app-children
+      [title]="child.title"
+      [badgeSrc]="child.badgePath + 1"
+      [buttonText] = "'Text shadow'"
+      (changeParent)="setRandomTextShadowForParentTitle()"
+    ></app-children>
+
+    <app-children
+      [title]="child.title"
+      [badgeSrc]="child.badgePath + 2"
+      [buttonText] = "'Colour'"
+      (changeParent)="setRandomColourForParentTitle()"
+    ></app-children>
+
+    <app-children
+      [title]="child.title"
+      [badgeSrc]="child.badgePath + 3"
+      [buttonText] = "'Background'"
+      (changeParent)="setRandomBackgroundColourForParentComponent()"
+    ></app-children>
+
+    <app-children
+      [title]="child.title"
+      [badgeSrc]="child.badgePath + 4"
+      [buttonText] = "'Font'"
+      (changeParent)="setRandomFontForParentTitle()"
+    >
+      <span [ngStyle]="{'display': 'flex'}">
+        <p #addAdditionalContent></p>
+        <app-form (additionalContent)="setAdditionalContent($event)"></app-form>
+      </span>
+    </app-children>
+  </div>
+
+</div>
