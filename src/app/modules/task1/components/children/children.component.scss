@@ -1,0 +1,37 @@
+div.wrapper {
+  border: cornflowerblue double thick;
+  margin: 15px 0 0;
+  padding: 10px;
+  text-align: center;
+  height: 20vh;
+
+  div.top {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+
+    img.badge {
+      border: orangered double thick;
+      background-color: lightpink;
+      width: 60px;
+      height: 60px;
+      position: relative;
+      top: -47px;
+      left: 20px;
+    }
+  }
+
+  h2 {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  button {
+    margin: auto;
+    min-width: 60%;
+    height: 30px;
+    opacity: .8;
+  }
+}

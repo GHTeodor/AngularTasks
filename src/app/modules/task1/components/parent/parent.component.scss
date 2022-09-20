@@ -1,0 +1,16 @@
+div.wrapper {
+  border: rebeccapurple double thick;
+  margin: 0;
+  padding: 10px;
+
+  div.children-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    padding-top: 20px;
+
+    p {
+      text-align: start;
+    }
+  }
+}

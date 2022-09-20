@@ -1,0 +1,10 @@
+div {
+  > a {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  > a.active {
+    color: orangered;
+  }
+}
